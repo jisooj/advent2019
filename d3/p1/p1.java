@@ -62,9 +62,8 @@ public class p1 {
             // exclude origin
             if (intersection != null && 
                intersection.x != 0 && 
-               intersection.y != 0 &&
-               manDist(intersection) < minDist) {
-               minDist = manDist(intersection);
+               intersection.y != 0) {
+               minDist = Math.min(minDist, manDist(intersection));
             }
          }   
       }
