@@ -55,8 +55,6 @@ public class p1 {
       Edge[] e1 = makeEdges(in.nextLine().split(","));
       Edge[] e2 = makeEdges(in.nextLine().split(","));
       int minDist = Integer.MAX_VALUE;
-      int minX = 0;
-      int minY = 0;
 
       for (int i = 0; i < e1.length; i++) {
          for (int j = 0; j < e2.length; j++) {
@@ -67,8 +65,6 @@ public class p1 {
                intersection.y != 0 &&
                manDist(intersection) < minDist) {
                minDist = manDist(intersection);
-               minX = intersection.x;
-               minY = intersection.y;
             }
          }   
       }
